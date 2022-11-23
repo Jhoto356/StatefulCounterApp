@@ -45,15 +45,17 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Scaffold(
           appBar: AppBarByDefault().buildNewAppBar("Counter App!!", Colors.redAccent),
           body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                const Text("Current number:", style: CustomerStyle.titleStyle,),
-                Text(_currentNumber.toString())
+            child: widget(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Text("Current number:", style: CustomerStyle.titleStyle,),
+                  Text(_currentNumber.toString())
 
-              ],
+                ],
 
+              ),
             ),
 
           ),
